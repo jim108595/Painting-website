@@ -1,140 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>A1 Painting & Decorating</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
-    }
-    header, footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-    }
-    .container {
-      padding: 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h1, h2 {
-      color: #333;
-    }
-    ul {
-      list-style: disc;
-      padding-left: 20px;
-    }
-    .cta {
-      background-color: #007BFF;
-      color: white;
-      padding: 10px;
-      display: inline-block;
-      margin-top: 10px;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-    }
-    .gallery img {
-      width: 100%;
-      max-width: 300px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-    }
-    .contact-form button {
-      padding: 10px 20px;
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      margin-top: 10px;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-<img src="file_00000000d7ac61f497d4b1610d1bcad8.png" alt="A1 Painting & Decorating Logo" style="width: 100%; max-width: 400px; display: block; margin: 20px auto;" />
-<header>
-    <h1>Professional Painting & Decorating</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #000; /* Black background */
+    color: #0f0; /* Bright green text */
+  }
 
-  <div class="container" id="home">
-    <h2>Welcome</h2>
-    <p>With over 20 years of experience, A1 Painting & Decorating delivers top-quality interior and exterior work tailored to your home.</p>
-    <a class="cta" href="#contact">Get a Free Quote</a>
-  </div>
+  header, footer {
+    background-color: #000; /* Black */
+    color: #0f0; /* Green text */
+    text-align: center;
+    padding: 20px 0;
+  }
 
-  <div class="container" id="services">
-    <h2>Services</h2>
-    <h3>Interior Painting & Decorating</h3>
-    <ul>
-      <li>Walls & Ceilings</li>
-      <li>Skirtings, Banisters, Stairs</li>
-      <li>Doors, Door Frames & Window Frames</li>
-      <li>Floors</li>
-      <li>Ames Taping</li>
-      <li>Wallpaper Stripping & Hanging</li>
-    </ul>
-    <h3>Exterior Painting & Decorating</h3>
-    <ul>
-      <li>Exterior Walls</li>
-      <li>Window Frames & Doors</li>
-      <li>Soffits & Fascias</li>
-    </ul>
-  </div>
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #111; /* Slight contrast */
+    padding: 10px 0;
+  }
 
-  <div class="container" id="gallery">
-    <h2>Our Work</h2>
-    <div class="gallery">
-      <img src="FB_IMG_1463646387332.jpg" alt="Gallery Photo 1" />
-      <img src="FB_IMG_1468862560600.jpg" alt="Gallery Photo 2" />
-      <img src="FB_IMG_1468862568526.jpg" alt="Gallery Photo 3" />
-      <img src="FB_IMG_1468862572783.jpg" alt="Gallery Photo 4" />
-      <img src="FB_IMG_1583342600215.jpg" alt="Gallery Photo 5" />
-      <img src="FB_IMG_1583342912354.jpg" alt="Gallery Photo 6" />
-      <img src="FB_IMG_1583342961526.jpg" alt="Gallery Photo 7" />
-      <img src="FB_IMG_1583342966991.jpg" alt="Gallery Photo 8" />
-      <img src="FB_IMG_1583342970994.jpg" alt="Gallery Photo 9" />
-    </div>
-  </div>
+  nav a {
+    color: #0f0;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-  <div class="container" id="contact">
-    <h2>Contact Us</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
+  .container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
 
-  <footer>
-    <p>&copy; 2025 A1 Painting & Decorating</p>
-  </footer>
+  h1, h2, h3 {
+    color: #0f0;
+  }
 
-</body>
-</html>
+  .cta {
+    display: inline-block;
+    background-color: #0f0;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  .cta:hover {
+    background-color: #2aff2a;
+  }
+
+  .gallery img {
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #0f0;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: #111;
+    color: #0f0;
+    border: 1px solid #0f0;
+  }
+
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #0f0;
+    color: #000;
+    border: none;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+</style>
