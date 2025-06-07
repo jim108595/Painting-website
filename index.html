@@ -1,8 +1,32 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A1 Painting & Decorating</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A1 Painting & Decorating | Premium Painters & Decorators</title>
+  <meta name="description" content="A1 Painting & Decorating — High-end painting and decorating services for homes and businesses. Transforming spaces with precision, passion, and luxury results." />
+  <meta name="keywords" content="painting, decorating, luxury, high-end, A1 Painting, professional, interior, exterior, wallpaper, commercial, premium painters, decorators" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://yourdomain.com/" />
+
+  <!-- OG Graph -->
+  <meta property="og:title" content="A1 Painting & Decorating | Premium Painters & Decorators" />
+  <meta property="og:description" content="Transforming spaces with precision and passion. Discover luxury painting and decorating for high-end homes and businesses." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:image" content="https://yourdomain.com/logo.png" />
+  <meta property="og:site_name" content="A1 Painting & Decorating" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="A1 Painting & Decorating | Premium Painters & Decorators" />
+  <meta name="twitter:description" content="Luxury painting and decorating for high-end living. Discover the A1 difference." />
+  <meta name="twitter:image" content="https://yourdomain.com/logo.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://yourdomain.com/favicon.png" />
+
+  <!-- Fonts & Styles -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -10,204 +34,255 @@
       --electric-purple: #9D00FF;
       --black: #000000;
       --white: #FFFFFF;
-    }* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+    }
 
-html {
-  scroll-behavior: smooth;
-}
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-body {
-  font-family: 'Poppins', sans-serif;
-  background: var(--white);
-  color: var(--black);
-  overflow-x: hidden;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-header {
-  background: var(--white);
-  padding: 20px 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 3px solid var(--neon-green);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--white);
+      color: var(--black);
+      overflow-x: hidden;
+    }
 
-header img {
-  width: 160px;
-}
+    header {
+      background: var(--white);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid var(--neon-green);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
 
-nav a {
-  margin: 0 20px;
-  text-decoration: none;
-  font-weight: 700;
-  color: var(--electric-purple);
-  font-size: 18px;
-  position: relative;
-}
+    header img {
+      width: 160px;
+    }
 
-nav a::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 3px;
-  background: var(--neon-green);
-  transition: width 0.3s;
-  margin-top: 5px;
-}
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 700;
+      color: var(--electric-purple);
+      font-size: 18px;
+      position: relative;
+    }
 
-nav a:hover::after {
-  width: 100%;
-}
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 3px;
+      background: var(--neon-green);
+      transition: width 0.3s;
+      margin-top: 5px;
+    }
 
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--neon-green), var(--electric-purple));
+      color: var(--white);
+      text-align: center;
+      padding: 150px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('paint-stroke.svg') no-repeat center center;
+      background-size: cover;
+      opacity: 0.05;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      margin-bottom: 20px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    .hero p {
+      font-size: 22px;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 80px 60px;
+      background: #f0f0f5;
+    }
+
+    .service {
+      background: var(--white);
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.4s, box-shadow 0.4s;
+      text-align: center;
+    }
+
+    .service:hover {
+      transform: translateY(-15px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+
+    .service h3 {
+      color: var(--neon-green);
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+
+    .service p {
+      font-size: 17px;
+      color: #555;
+    }
+
+    .testimonials {
+      padding: 80px 40px;
+      background: var(--white);
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      font-size: 40px;
+      margin-bottom: 40px;
+      color: var(--electric-purple);
+    }
+
+    .testimonial {
+      max-width: 700px;
+      margin: 0 auto 60px;
+      font-size: 20px;
+      font-style: italic;
+      color: #333;
+      position: relative;
+    }
+
+    .testimonial::before, .testimonial::after {
+      content: '"';
+      font-size: 50px;
+      color: var(--neon-green);
+      position: absolute;
+    }
+
+    .testimonial::before {
+      top: -20px;
+      left: -20px;
+    }
+
+    .testimonial::after {
+      bottom: -20px;
+      right: -20px;
+    }
+
+    .testimonial-author {
+      margin-top: 20px;
+      font-weight: bold;
+      color: var(--electric-purple);
+    }
+
+    footer {
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 16px;
+      position: relative;
+    }
+
+    footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--neon-green), var(--electric-purple));
+      border-radius: 2px;
+    }
+  
 .hero {
-  background: linear-gradient(135deg, var(--neon-green), var(--electric-purple));
-  color: var(--white);
-  text-align: center;
-  padding: 150px 20px;
   position: relative;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
-
-.hero::after {
-  content: '';
+.hero-bg {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('paint-stroke.svg') no-repeat center center;
-  background-size: cover;
-  opacity: 0.05;
+  top: 0; left: 0; width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(0.45) blur(0.5px);
 }
-
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  background: rgba(24, 0, 30, 0.43);
+  padding: 48px 36px 32px;
+  border-radius: 2.5rem;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.16);
+  display: inline-block;
+}
+.hero-logo {
+  width: 140px;
+  margin-bottom: 24px;
+  filter: drop-shadow(0 4px 24px #39FF14aa);
+}
 .hero h1 {
-  font-size: 56px;
-  margin-bottom: 20px;
-  animation: fadeInDown 1s ease-out;
+  font-size: 54px;
+  margin: 0;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-shadow: 0 4px 12px #0006;
 }
-
 .hero p {
-  font-size: 22px;
-  animation: fadeInUp 1s ease-out;
+  font-size: 24px;
+  margin: 22px 0 0;
+  color: #d2ccff;
+  font-weight: 500;
 }
-
-@keyframes fadeInDown {
-  0% { opacity: 0; transform: translateY(-50px); }
-  100% { opacity: 1; transform: translateY(0); }
+@media (max-width: 700px) {
+  .hero h1 { font-size: 32px; }
+  .hero-overlay { padding: 28px 8px 16px; }
+  .hero-logo { width: 82px; }
 }
-
-@keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(50px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
-
-.services {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
-  padding: 80px 60px;
-  background: #f0f0f5;
-}
-
-.service {
-  background: var(--white);
-  padding: 40px 30px;
-  border-radius: 20px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
-  transition: transform 0.4s, box-shadow 0.4s;
-  text-align: center;
-}
-
-.service:hover {
-  transform: translateY(-15px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-}
-
-.service h3 {
-  color: var(--neon-green);
-  font-size: 26px;
-  margin-bottom: 15px;
-}
-
-.service p {
-  font-size: 17px;
-  color: #555;
-}
-
-.testimonials {
-  padding: 80px 40px;
-  background: var(--white);
-  text-align: center;
-}
-
-.testimonials h2 {
-  font-size: 40px;
-  margin-bottom: 40px;
-  color: var(--electric-purple);
-}
-
-.testimonial {
-  max-width: 700px;
-  margin: 0 auto 60px;
-  font-size: 20px;
-  font-style: italic;
-  color: #333;
-  position: relative;
-}
-
-.testimonial::before, .testimonial::after {
-  content: '"';
-  font-size: 50px;
-  color: var(--neon-green);
-  position: absolute;
-}
-
-.testimonial::before {
-  top: -20px;
-  left: -20px;
-}
-
-.testimonial::after {
-  bottom: -20px;
-  right: -20px;
-}
-
-.testimonial-author {
-  margin-top: 20px;
-  font-weight: bold;
-  color: var(--electric-purple);
-}
-
-footer {
-  background: var(--black);
-  color: var(--white);
-  text-align: center;
-  padding: 30px 20px;
-  font-size: 16px;
-  position: relative;
-}
-
-footer::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 4px;
-  background: linear-gradient(90deg, var(--neon-green), var(--electric-purple));
-  border-radius: 2px;
-}
-
-  </style>
+</style>
 </head>
 <body>
   <header>
@@ -219,10 +294,18 @@ footer::before {
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </nav>
-  </header>  <section class="hero" id="home">
+  </header>
+
+  <section class="hero" id="home">
+  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="Luxury Decor" class="hero-bg">
+  <div class="hero-overlay">
+    <img src="logo.png" class="hero-logo" alt="A1 Painting & Decorating Logo">
     <h1>Transforming Spaces with Precision & Passion</h1>
     <p>Painting & Decorating Crafted for High-End Living</p>
-  </section>  <section class="services" id="services">
+  </div>
+</section>
+
+  <section class="services" id="services">
     <div class="service">
       <h3>Interior Excellence</h3>
       <p>Flawless walls and bespoke finishes to elevate every interior space with a luxury touch.</p>
@@ -239,7 +322,9 @@ footer::before {
       <h3>Commercial Elegance</h3>
       <p>Premium painting solutions tailored for discerning commercial clients and prestigious properties.</p>
     </div>
-  </section>  <section class="testimonials" id="testimonials">
+  </section>
+
+  <section class="testimonials" id="testimonials">
     <h2>What Our Clients Say</h2>
     <div class="testimonial">
       "Absolutely outstanding service! The finish is flawless and the team was extremely professional. Our home has never looked better."
@@ -253,7 +338,9 @@ footer::before {
       "Exceptional craftsmanship and dedication. They treated our commercial space like a luxury project. Highly recommend!"
       <div class="testimonial-author">- Michelle R.</div>
     </div>
-  </section>  <footer>
+  </section>
+
+  <footer>
     &copy; 2025 A1 Painting & Decorating. All rights reserved.
   </footer>
 </body>
